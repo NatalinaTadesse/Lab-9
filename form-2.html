@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <h1>Input Form</h1>
+  <form action="/insert" method="post">
+    <label for="username">Username:</label>
+    <input type="text" name="username" maxlength="40">
+    <br>
+    <label for="password">Password:</label>
+    <input type="password" name="password" maxlength="40">
+    <br>
+    <label for="email">Email Address:</label>
+    <input type="email" name="email" maxlength="40">
+    <br>
+   
+    <input type="submit" value="Submit">
+    <p>Forgot password? <a href="/retrieve">Click here to retrieve your password!</a></p>
+  </form>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+ <head>
+    <meta charset ="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+       Password Retrieval Form 
+    </title>
+ </head>
+
+<body>
+ <form action= "/submit" method="POST">
+    <label for = "email" > Please Enter your email address :
+    </label>
+    <input type= "email" id = "email" name = "email" maxlength = "40" required>
+    <label for = "username" > Please Enter your username :
+    </label>
+    <input type= "text" id = "username" name = "username" maxlength = "40" required>
+    <label for = "new_password" > Please Enter your new password :
+    </label>
+    <input type= "password" id = "new_password" name = "new_password" maxlength = "40" required>
+    <input type= "submit" value = "Submit">
+ </form>
+</body>
+</html>
